@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Humanoid Project (Continued)</name>
+  <packageId>Mlie.HumanoidProject</packageId>
+  <author>EvaineQ</author>
+  <url>https://github.com/emipa606/HumanoidProject</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
+    </li>
+    <li>
+      <packageId>jecrell.jecstools</packageId>
+      <displayName>JecsTools</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>jecrell.jecstools</li>
+  </loadAfter>
+  <description>Update of EvaineQs mod for RimWorld 1.1
+https://ludeon.com/forums/index.php?topic=49125.0
+
+[img]https://i.imgur.com/GYswkZ7.png[/img]
+
+Support-chat:
+https://invite.gg/mlie
+
+Non-steam version:
+https://github.com/emipa606/HumanoidProject
+
+- Removed the settlement-generation as it needs a rewrite to use the new Quest-system
+
+This is a big mod so I may have missed some things in it, please report errors here or on the Discord-server.
+	
+--- Original Description ---
+&lt;b&gt;First release of HUMANOID PROJECT&lt;/b&gt;
+	
+&lt;b&gt;COMPATIBILITY&lt;/b&gt;
+A &lt;b&gt;MOD&lt;/b&gt; called ([SYR] Prosthetic Icons) will override my Prosthetics Icons (So i recommend to Install a MOD called "BIONIC ICONS" by AUTOMATIC which doesn't have any conflicts with my MOD)
+
+&lt;b&gt;FEATURES&lt;/b&gt;
+The Humanoid Project features three new Playable &lt;b&gt;Races&lt;/b&gt;.
+
+&lt;b&gt;Avians&lt;/b&gt;. Avians (Called Storm Casters) have the Ability to cast Powerful Lightning Bolts, that can have a Huge Impact on the Environments. The impact of a Bolt can cause a strange Blue-Fire that can be Extremely Hard to Extinguish.
+The Avians will comment on the Upcoming Weather, letting you know if a Storm is around your Doors. They also have Adaptive Eyes, this means that they can adapt in various Light-Conditions making them more precise when using ranged weapons.
+
+&lt;b&gt;Volcanians&lt;/b&gt;. Have a really Solid skin that can Resist even on the Hottest conditions.
+
+&lt;b&gt;Descendants of Volcanians&lt;/b&gt;. Similar to Volcanians but they Feature a really unique color and deeper stats.
+
+&lt;b&gt;PROSTHETICS&lt;/b&gt;
+A new &lt;b&gt;Prosthetic System&lt;/b&gt;. Prosthetics now work in Stages which try to Simulate the real world system. (You can Check out my Steam-Page which has a more Detailed explanation along with Images)
+Some of the Implants grants you Special Abilities when Installed (For example we can take the Growth-Simulator, which allow any Pawn to regrow missing Body Parts. More Advanced ones grants the Ability to cast Powerful Bolts)
+
+&lt;b&gt;ENERGY GUNS&lt;/b&gt;
+New type of Weapons that Use Energy Projectiles that can have a really big Impact on the Battle. (Featuring new Sound Effects as well)
+
+&lt;b&gt;FACTIONS&lt;/b&gt;
+Two new Factions that can have a Major impact on your Colony. 
+&lt;b&gt;Procedurally Generated Settlement&lt;/b&gt;
+A new Incident Connected to Factions. (Factions can send you Quests of an Infested nearby Settlement, you can either choose to help them or not. The settlements are Procedurally Generated, they can contain tons and tons of Items for you to loot...if you manage to survive of course) 
+(You can again check my Steam-Page which has a more detailed information about Settlements along with Pictures)
+
+&lt;b&gt;WEATHER&lt;/b&gt;
+New type of Weathers:
+An &lt;b&gt;EMP-Storm&lt;/b&gt; is incoming and all of the electronic Devices have a chance to not work properly.
+
+An &lt;b&gt;Anomaly Storm&lt;/b&gt;. This storm has a massive area of impact so be careful when wandering outside of the Colony. The Storm will start massive wildfires in entire area, but hopefully the rain will put it out. Don't stay close to trees. Caution is advised. (This storm due to chemical reactions cause a Bluish-Fire) There is also a Dry Version of this Storm which means that it can happen even without Rain.
+
+And a &lt;b&gt;Runic Storm&lt;/b&gt; that can blast a small area with repeated and massive lightning strikes
+
+&lt;b&gt;PLANTS&lt;/b&gt;
+Featuring tons of New Plants that can be used to produce Food and even Advanced-Stimulator's.
+
+&lt;b&gt;FOOD&lt;/b&gt;
+The Mod features are also tons of new Synthetic-Food which can be Fabricated at the Bio-Lab.
+
+&lt;b&gt;BUILDINGS&lt;/b&gt;
+
+&lt;b&gt;Bio-Lab&lt;/b&gt;. The Bio-Lab is used to manufacture Synthetic-Food and some of the Advanced-Bionics. Be careful this Structure can cause a massive Explosion that has a Bluish-Fire that can be Extremely hard to Extinguish.
+
+&lt;b&gt;Cosmos-Bench&lt;/b&gt;. The Cosmos-Bench is used to manufacture Energy-Weapons. Beware this Building can Heat your Room to Extreme-Levels if you don't use a good cooling solution.
+
+</description>
+</ModMetaData>

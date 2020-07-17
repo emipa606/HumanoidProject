@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--====== Storm Power Race ======-->
+  <AbilityUser.AbilityDef>
+    <defName>AvianPower</defName>
+    <label>Runic Bolt</label>
+    <uiIconPath>UI/Icons/Commands/AvianAbility</uiIconPath>
+    <description>A Runic Bolt that can only be casted by Avian Race. Has a Massive Area of Impact. The "Runic Fire" cannot be Extinguished but due to an incompatible atmosphere it will Disappear very fast. Warning! "Runic Fire" will help spread the "Normal Fire" in an abnormal way so be very careful when casting this Ability really close to your Colony. (To correctly Cast the Bolt Make sure your view is Clear)</description>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+      <abilityDef>AvianPower</abilityDef>
+      <verbClass>AbilityUser.Verb_UseAbility</verbClass>
+      <tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+      <tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+      <tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+      <tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_AvianPower</defaultProjectile>
+      <isViolent>true</isViolent>
+      <warmupTime>1.8</warmupTime>
+      <SecondsToRecharge>440</SecondsToRecharge>
+      <range>44</range>
+      <burstShotCount>1</burstShotCount>
+      <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+      <muzzleFlashScale>20</muzzleFlashScale>
+      <isPrimary>false</isPrimary>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetItems>false</canTargetItems>
+        <canTargetSelf>false</canTargetSelf>
+      </targetParams>
+    </MainVerb>
+  </AbilityUser.AbilityDef>
+  <ThingDef ParentName="EvaineQBullets" Class="ThingDef">
+    <defName>Projectile_AvianPower</defName>
+    <thingClass>RaceAbilities.Projectile_LightningStorm</thingClass>
+    <label>Runic Bolt</label>
+    <graphicData>
+      <texPath>UI/Icons/Commands/AvianAbility</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <explosionRadius>4</explosionRadius>
+      <damageDef>BlueFire</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  <!--====== Storm Power Human Red ======-->
+  <AbilityUser.AbilityDef>
+    <defName>HumanPower</defName>
+    <label>Unstable Bolt</label>
+    <uiIconPath>UI/Icons/Commands/HumanAbility</uiIconPath>
+    <description>An Unstable Bolt. This bolt is Handled by an Unstable Stimulator which can Give the Ability some "Side Effects". This Ability has a chance to fail when being Casted, also the Bolt can accidentally Strike your Colonist. The Fire produced from this Bolt makes it Impossible to be Extinguished but due to an incompatible atmosphere it will Disappear very fast. (To correctly Cast the Bolt Make sure your view is Clear)</description>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+      <abilityDef>HumanPower</abilityDef>
+      <verbClass>AbilityUser.Verb_UseAbility</verbClass>
+      <tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+      <tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+      <tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+      <tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_HumanPower</defaultProjectile>
+      <isViolent>true</isViolent>
+      <warmupTime>2.9</warmupTime>
+      <SecondsToRecharge>400</SecondsToRecharge>
+      <range>34</range>
+      <burstShotCount>1</burstShotCount>
+      <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+      <muzzleFlashScale>20</muzzleFlashScale>
+      <isPrimary>false</isPrimary>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetItems>false</canTargetItems>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </MainVerb>
+  </AbilityUser.AbilityDef>
+  <ThingDef ParentName="EvaineQBullets" Class="ThingDef">
+    <defName>Projectile_HumanPower</defName>
+    <thingClass>HumanAbilities.Projectile_HumanLightningStorm</thingClass>
+    <label>Unstable Bolt</label>
+    <graphicData>
+      <texPath>UI/Icons/Commands/HumanAbility</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <explosionRadius>2</explosionRadius>
+      <damageDef>RedFire</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  <!--====== Storm Power Human Upgraded Green ======-->
+  <AbilityUser.AbilityDef>
+    <defName>UpgradedStorm</defName>
+    <label>Computational Bolt</label>
+    <uiIconPath>UI/Icons/Commands/UpgradedAbility</uiIconPath>
+    <description>An Computational Bolt. This bolt is Handled by a Powerful and Extremely unstable Stimulator. Has no Side Effects on the Ability Usage but has Extreme Side Effects on The Colonist in a Long Term Use. This Bolt Provides a really Impressive Area of Impact. The Fire produced from this Bolt makes it Impossible to be Extinguished but due to an incompatible atmosphere it will Disappear very fast. (To correctly Cast the Bolt Make sure your view is Clear)</description>
+    <MainVerb Class="AbilityUser.VerbProperties_Ability">
+      <abilityDef>UpgradedStorm</abilityDef>
+      <verbClass>AbilityUser.Verb_UseAbility</verbClass>
+      <tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+      <tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+      <tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+      <tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_UpgradedStorm</defaultProjectile>
+      <isViolent>true</isViolent>
+      <warmupTime>2.0</warmupTime>
+      <SecondsToRecharge>460</SecondsToRecharge>
+      <range>42</range>
+      <burstShotCount>1</burstShotCount>
+      <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+      <muzzleFlashScale>20</muzzleFlashScale>
+      <isPrimary>false</isPrimary>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetItems>false</canTargetItems>
+        <canTargetSelf>false</canTargetSelf>
+      </targetParams>
+    </MainVerb>
+  </AbilityUser.AbilityDef>
+  <ThingDef ParentName="EvaineQBullets" Class="ThingDef">
+    <defName>Projectile_UpgradedStorm</defName>
+    <thingClass>HumanUpgraded.Projectile_UpgradedLightningStorm</thingClass>
+    <label>Computational Bolt</label>
+    <graphicData>
+      <texPath>UI/Icons/Commands/UpgradedAbility</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <explosionRadius>3</explosionRadius>
+      <damageDef>GreenFire</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74590F79-0890-4B17-BC0E-6897C1C2B197}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Humanoid_Project</RootNamespace>
+    <AssemblyName>Humanoid_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\1.1\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.1\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AbilityUser">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\932008009\Assemblies\AbilityUser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DedicatedSupport\EnchantedPlus.cs" />
+    <Compile Include="DedicatedSupport\SupportSpecific.cs" />
+    <Compile Include="EvaineQBionics\EffecterDefOf.cs" />
+    <Compile Include="EvaineQBionics\JobDefOf.cs" />
+    <Compile Include="EvaineQBionics\JobDriver_BlueVomit.cs" />
+    <Compile Include="EvaineQBionics\ThingDefOf.cs" />
+    <Compile Include="EvaineQMentalWorker\JobDefOfEvaineQMentalWorker.cs" />
+    <Compile Include="EvaineQMentalWorker\JobDriver_StormMark.cs" />
+    <Compile Include="EvaineQMentalWorker\JobGiver_StormMark.cs" />
+    <Compile Include="EvaineQMentalWorker\MentalStateWorker_StormMark.cs" />
+    <Compile Include="EvaineQMentalWorker\MentalState_StormMark.cs" />
+    <Compile Include="EvaineQTraits\ThoughtWorker_AvianStorm.cs" />
+    <Compile Include="EvaineQTraits\ThoughtWorker_EyesInteraction.cs" />
+    <Compile Include="EvaineQTraits\TraitDefOfEvaineQ.cs" />
+    <Compile Include="HediffSpecial\BodypartUtility.cs" />
+    <Compile Include="HediffSpecial\ButcherUtility.cs" />
+    <Compile Include="HediffSpecial\DefModExtension_BionicSpecial.cs" />
+    <Compile Include="HediffSpecial\ExtensionUtility.cs" />
+    <Compile Include="HediffSpecial\HediffDefOf_CosmosInd.cs" />
+    <Compile Include="HediffSpecial\HediffGiver_CosmosSpecial.cs" />
+    <Compile Include="HediffSpecial\Hediff_EnchantedBionic.cs" />
+    <Compile Include="HediffSpecial\Hediff_RegrowinBodyPart.cs" />
+    <Compile Include="HediffSpecial\RemovableHediff.cs" />
+    <Compile Include="HumanAbilities\CompPsionicUserExample.cs" />
+    <Compile Include="HumanAbilities\DamageDefOf.cs" />
+    <Compile Include="HumanAbilities\DamageWorker_RedFire.cs" />
+    <Compile Include="HumanAbilities\HumanAbilitiesDefOf.cs" />
+    <Compile Include="HumanAbilities\MoteMaker.cs" />
+    <Compile Include="HumanAbilities\Projectile_HumanLightningStorm.cs" />
+    <Compile Include="HumanAbilities\RedFireUtility.cs" />
+    <Compile Include="HumanAbilities\ThingDefOf.cs" />
+    <Compile Include="HumanUpgraded\CompHumanUpgraded.cs" />
+    <Compile Include="HumanUpgraded\DamageDefOf.cs" />
+    <Compile Include="HumanUpgraded\DamageWorker_GreenFire.cs" />
+    <Compile Include="HumanUpgraded\GreenFireUtility.cs" />
+    <Compile Include="HumanUpgraded\MoteMaker.cs" />
+    <Compile Include="HumanUpgraded\Projectile_UpgradedLightningStorm.cs" />
+    <Compile Include="HumanUpgraded\ThingDefOf.cs" />
+    <Compile Include="HumanUpgraded\UpgradedAbilitiesDefOf.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceAbilities\BlueFireUtility.cs" />
+    <Compile Include="RaceAbilities\CompPsionicUserExample.cs" />
+    <Compile Include="RaceAbilities\DamageDefOf.cs" />
+    <Compile Include="RaceAbilities\DamageWorker_BlueFire.cs" />
+    <Compile Include="RaceAbilities\GameConditionDefOf.cs" />
+    <Compile Include="RaceAbilities\GameCondition_RunicStorm.cs" />
+    <Compile Include="RaceAbilities\IncidentWorker_RaceRescuer.cs" />
+    <Compile Include="RaceAbilities\IncidentWorker_RunicStorm.cs" />
+    <Compile Include="RaceAbilities\MoteMaker.cs" />
+    <Compile Include="RaceAbilities\Projectile_LightningStorm.cs" />
+    <Compile Include="RaceAbilities\RaceAbilitiesDefOf.cs" />
+    <Compile Include="RaceAbilities\ThingDefOf.cs" />
+    <Compile Include="RaceAbilities\WeatherEvent_BlueStorm.cs" />
+    <Compile Include="RaceAbilities\WeatherEvent_LightningFlash.cs" />
+    <Compile Include="RaceWeapons\CompFutureDamage.cs" />
+    <Compile Include="RaceWeapons\CompProperties_RaceDamage.cs" />
+    <Compile Include="RaceWeapons\Projectile_HeatImpact.cs" />
+    <Compile Include="RaceWeapons\ThingDefOf.cs" />
+    <Compile Include="RaceWeapons\ThingDef_RaceWeapons.cs" />
+    <Compile Include="WeatherIsolated\MoteMaker.cs" />
+    <Compile Include="WeatherIsolated\ThingDefOf.cs" />
+    <Compile Include="WeatherIsolated\WeatherEvent_EmpStorm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

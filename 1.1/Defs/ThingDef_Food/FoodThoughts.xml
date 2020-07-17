@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>StrangeTaste</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbols/Normal</icon>
+    <durationDays>0.5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>What a strange food.</label>
+        <description>It feels like chewing a Slime!! We should really stop playing with the lab grown food...</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>LabTaste</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbols/Normal</icon>
+    <durationDays>0.5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>Another lab grown meat?!</label>
+        <description>Ahh.. here we go again.. Who is the scientist of the Colony?</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>NaturalMeat</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbols/Normal</icon>
+    <durationDays>0.5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>Tastes like natural meat!</label>
+        <description>It's like eating a Natural meat!!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>FoodZebra</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbols/Normal</icon>
+    <durationDays>0.5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>A Zebra meat..!!?</label>
+        <description>Well now this is strange.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AteRawStrange</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbols/Raw</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>Ate raw food</label>
+        <description>It's raw bleh..</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

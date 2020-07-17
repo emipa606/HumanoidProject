@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MealBase" Name="SpecialRottable" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X FoodProduction ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>AlienMeatRed</defName>
+    <label>Volcanic Fawn</label>
+    <description>A simple, and Strange Meat with a Red color that has normal properties similar to the regular common meat. (Can be Produced in Early stages of the game, Unlocked from Tier 1 of Alien Plants)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienMeat_0/AlienMeatRed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.6</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X AlienFoodPatternGreen ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>AlienMeatGreen</defName>
+    <label>Axolot Meat</label>
+    <description>A simple, and Strange Meat that has a mysterious green color. The meat origin comes from advanced plant-based lifeforms similar to trees. (Can be Produced in Early stages of the game, Unlocked from Tier 1 of Alien Plants)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienMeat_1/AlienMeatGreen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.6</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>AlienMeatStrange</defName>
+    <label>Woodchuck Meat</label>
+    <description>A simple, and Strange Meat thats origin is from advanced plant-based lifeforms capable of photosynthesis. (Can be Produced in Early stages of the game, Unlocked from Tier 1 of Alien Plants)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienMeat_2/AlienMeatStrange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.6</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X AlienFoodPatternLightGreen ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>AlienSteak</defName>
+    <label>Bio Steak</label>
+    <description>A simple, Bio Steak from a Mysterious poison Alien Plant that normally live on planets with rich oxygen atmosphere... those plants have a similar molecular structure to jellyfish. (Can be produced from a Tier 3 of Alien Plants, Demon Lily)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienSteak/AlienSteakTransparent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.7</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>StrangeTaste</tasteThought>
+      <preferability>MealFine</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>GeneticSteak</defName>
+    <label>Genetic Steak</label>
+    <description>A simple, Genetic Steak from a Mysterious poison Alien Plant that can be normally found on planets with rich oxygen atmosphere and are similar to living sponge. (Can be produced from a Tier 3 of Alien Plants, Demon Lily)</description>
+    <graphicData>
+      <texPath>Things/Food/GeneticSteak/GeneticSteak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.7</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>StrangeTaste</tasteThought>
+      <preferability>MealFine</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>GreenSteak</defName>
+    <label>Masked Steak</label>
+    <description>A simple, Masked Steak from a Mysterious poison Alien Plant that can be normally found on planets with rich oxygen atmosphere. (Can be produced from a Tier 3 of Alien Plants, Demon Lily)</description>
+    <graphicData>
+      <texPath>Things/Food/GreenSteak/GreenSteak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.7</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>StrangeTaste</tasteThought>
+      <preferability>MealFine</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X AlienFoodPatternBlue ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>SyntheticMeatBlue</defName>
+    <label>Synthetic Lunar Meat</label>
+    <description>A simple, Synthetic Lunar Meat that has a very bright Blue color, produced from a Dark Energy Plant that live in methane rich atmosphere. (Can be produced from a Tier 2 of Alien Plants, Nightmare Brier)</description>
+    <graphicData>
+      <texPath>Things/Food/SyntheticMeat_2/SyntheticMeatBlue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.8</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>SyntheticMeatGreen</defName>
+    <label>Synthetic Bombay Meat</label>
+    <description>A simple, Synthetic Bombay Meat that has a light green color, produced from a Dark Energy Plant that live in methane and nitrogen rich atmosphere. (Can be produced from a Tier 2 of Alien Plants, Nightmare Brier)</description>
+    <graphicData>
+      <texPath>Things/Food/SyntheticMeat_1/SyntheticMeatGreen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.8</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>SyntheticMeatYellow</defName>
+    <label>Synthetic Lime Meat</label>
+    <description>A simple, Synthetic Lime Meat from a Mysterious Plant commonly found in Extreme Temperature that can peek over 700°...Not sure how we managed to grow them in normal conditions.... (Can be produced from a Tier 2 of Alien Plants, Magmatite)</description>
+    <graphicData>
+      <texPath>Things/Food/SyntheticMeat_0/SyntheticMeatYellow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.8</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>SyntheticMeatZebra</defName>
+    <label>Pulse-Saffron Meat</label>
+    <description>A simple, Pulse Saffron Meat...like what is this?.. comes from a Mysterious Plant commonly found in Extreme Temperature that can peek over 700°...Not sure how we managed to grow them in normal conditions.... (Can be produced from a Tier 2 of Alien Plants, Magmatite)</description>
+    <graphicData>
+      <texPath>Things/Food/SyntheticMeat_3/SyntheticMeatZebra</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X AlienFoodPatternDark ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>SyntheticMeatMagma</defName>
+    <label>Synthetic Chimera Meat</label>
+    <description>A resistant, Synthetic Chimera Meat produced from Alien Plants that live in sulfuric acid rich atmosphere. (Can be produced from a Tier 3 of Alien Plants, Venomous Toothwort)</description>
+    <graphicData>
+      <texPath>Things/Food/SyntheticMeat_4/SyntheticMeatMagma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>SyntheticMeatUnknown</defName>
+    <label>Synthetic Coated Meat</label>
+    <description>A resistant, Synthetic Coated Meat that has a strange green spires.. produced from Alien Plants that live in sulfuric acid rich atmosphere. (Can be produced from a Tier 3 of Alien Plants, Venomous Toothwort)</description>
+    <graphicData>
+      <texPath>Things/Food/SyntheticMeat_5/SyntheticMeatUnknown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>50</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X AlienFoodMixedSimple ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>GlowingMeat</defName>
+    <label>Glowing Meat</label>
+    <description>An advanced, Meat that glow in the Dark..What? Growing only in specific conditions with good nutrition yield and soft structure. (Can be produced from a Tier 1 of Alien Plants, Creepy Tulip)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienMeat_4/GlowingMeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>80</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>10</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <ingestible>
+      <tasteThought>LabTaste</tasteThought>
+      <preferability>MealFine</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(102,255,102)</glowColor>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <!--====== X AlienFoodMixedAdvanced ======-->
+  <ThingDef ParentName="SpecialRottable">
+    <defName>RainbowMeat</defName>
+    <label>Replicated Meat</label>
+    <description>An advanced, Replicated Meat with a very impressive nutrition yield and soft structure. (Can be produced from a Tier 4 of Alien Plants, Funeral Ivy)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienMeat_3/NaturalMeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Nutrition>1</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>10</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <ingestible>
+      <tasteThought>NaturalMeat</tasteThought>
+      <preferability>MealLavish</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>ZebraStyleMeat</defName>
+    <label>Zebra Meat</label>
+    <description>A very advanced, Zebra Meat....are we serious? Has a good nutrition yield and soft structure. (Can be produced from a Tier 4 of Alien Plants, Funeral Ivy)</description>
+    <graphicData>
+      <texPath>Things/Food/AlienMeat_5/ZebraStyleMeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>10</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <ingestible>
+      <tasteThought>FoodZebra</tasteThought>
+      <preferability>MealLavish</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="SpecialRottable">
+    <defName>ReplicatedSteak</defName>
+    <label>Replicated Steak</label>
+    <description>An advanced, Replicated Steak with a very impressive nutrition yield and soft structure. (Can be produced from a Tier 4 of Alien Plants, Funeral Ivy)</description>
+    <graphicData>
+      <texPath>Things/Food/MeatReplication/ReplicatedMeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Nutrition>1</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>10</Beauty>
+      <Mass>0.25</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <ingestible>
+      <tasteThought>NaturalMeat</tasteThought>
+      <preferability>MealLavish</preferability>
+      <optimalityOffsetHumanlikes>-1</optimalityOffsetHumanlikes>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+</Defs>
