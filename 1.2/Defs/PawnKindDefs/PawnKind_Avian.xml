@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="ColonistBaseKind">
+    <defName>AvianColonist</defName>
+    <race>Avian</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="SlaveBaseKind">
+    <defName>AvianSlave</defName>
+    <race>Avian</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="RefugeeBaseKind">
+    <defName>AvianRefugee</defName>
+    <race>Avian</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="VillagerBaseKind">
+    <defName>AvianVillager</defName>
+    <race>Avian</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TribalBaseKind">
+    <defName>AvianTribal</defName>
+    <race>Avian</race>
+  </PawnKindDef>
+</Defs>

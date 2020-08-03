@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--====== Game Condition Runic Storm ======-->
+  <IncidentDef>
+    <defName>RunicStorm</defName>
+    <label>Runic Storm</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RaceAbilities.IncidentWorker_RunicStorm</workerClass>
+    <letterLabel>Runic Storm</letterLabel>
+    <letterText>A rare Weather Event which occur every two thousand years, has massive are of impact that can cause unstoppable fires to spread through the entire Map.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0.4</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <minDifficulty>2</minDifficulty>
+    <durationDays>
+      <min>0.075</min>
+      <max>0.1</max>
+    </durationDays>
+    <tale>Flashstorm</tale>
+  </IncidentDef>
+  <!--====== Avian Rescuer Incident ======-->
+  <IncidentDef>
+    <defName>RaceRescuer</defName>
+    <label>Avian Rescuer</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>RaceAbilities.IncidentWorker_RaceRescuer</workerClass>
+    <letterLabel>A Rescuer!</letterLabel>
+    <letterText>A {PAWN_kind} named {PAWN_nameDef} has arrived and is joining the colony. {PAWN_pronoun} is a {PAWN_title}.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily. If you don't want {PAWN_nameDef}, you can banish {PAWN_objective}, sell {PAWN_objective} into slavery, or simply kill {PAWN_objective}. However, your other colonists may find this disturbing.</letterText>
+    <baseChance>0</baseChance>
+    <minRefireDays>60</minRefireDays>
+    <minGreatestPopulation>3</minGreatestPopulation>
+    <pawnKind>BKRescuer</pawnKind>
+    <populationEffect>IncreaseEasy</populationEffect>
+    <pawnFixedGender>Male</pawnFixedGender>
+    <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+  </IncidentDef>
+</Defs>

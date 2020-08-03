@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffGiverSetDef>
+    <defName>AvianHeGiver</defName>
+    <hediffGivers>
+      <li Class="JecsTools.HediffGiver_StartWithHediff">
+        <hediff>AvianHeDiff</hediff>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  <HediffGiverSetDef>
+    <defName>MagmaRaceHeGiver</defName>
+    <hediffGivers>
+      <li Class="JecsTools.HediffGiver_StartWithHediff">
+        <hediff>MagmaRaceHeDiff</hediff>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  <HediffGiverSetDef>
+    <defName>BlueMagmaRaceHeGiver</defName>
+    <hediffGivers>
+      <li Class="JecsTools.HediffGiver_StartWithHediff">
+        <hediff>BlueMagmaRaceHeDiff</hediff>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+</Defs>
