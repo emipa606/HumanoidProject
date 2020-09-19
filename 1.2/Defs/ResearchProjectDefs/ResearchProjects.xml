@@ -289,21 +289,22 @@
   <!--====== Cosmos Bionics ======-->
   <ResearchProjectDef>
     <defName>CosmosBionicResBase</defName>
-    <label>Basic Bionics</label>
-    <description>Learn to Manufacture Basic Bionics that are really Useful to replace lost Body Parts or Enchant existing ones such as Jaw, Lung, Eye and Hand.</description>
+    <label>Cosmos-Bionic</label>
+    <description>Learn to manufacture basic Cosmos-Tech bionic that are really useful to replace lost body parts or enchant existing ones such as Jaw, Ear, Eye and Hand.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <researchViewX>1</researchViewX>
     <researchViewY>4</researchViewY>
     <prerequisites>
+		<li>Bionics</li>
       <li>BioLabRes</li>
     </prerequisites>
     <tab>AlienProduction</tab>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>CosmosBionicResPlus</defName>
-    <label>Advanced Bionics</label>
-    <description>Learn to Manufacture Advanced Bionics that are really Useful to improve or replace existing body parts such as Spine, Stomach, Ear, Leg and Foot.</description>
+    <label>Advanced Cosmos-Bionic</label>
+    <description>Learn to manufacture advanced Cosmos-Tech bionic that are really useful to improve or replace existing body parts such as Spine, Leg, Foot, Lung and Stomach.</description>
     <baseCost>5500</baseCost>
     <techLevel>Spacer</techLevel>
     <researchViewX>2</researchViewX>
@@ -315,8 +316,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>CosmosBionicResPro</defName>
-    <label>Cosmos-Tech Bionics</label>
-    <description>Learn to Manufacture an Extremely useful late game Cosmos Tech Bionics. That can Massively improve Body Parts stats such as Kidney, Liver, Heart and Brain.</description>
+    <label>Ultra Cosmos-Bionic</label>
+    <description>Learn to manufacture an extremely useful late game Cosmos-Tech bionics that can massively improve body parts stats such as Kidney, Liver, Heart and Brain.</description>
     <baseCost>6000</baseCost>
     <techLevel>Spacer</techLevel>
     <researchViewX>3</researchViewX>
@@ -336,6 +337,7 @@
     <researchViewX>7</researchViewX>
     <researchViewY>1</researchViewY>
     <prerequisites>
+		<li>Bionics</li>
       <li>DragonAlienPlants</li>
     </prerequisites>
     <tab>AlienProduction</tab>
