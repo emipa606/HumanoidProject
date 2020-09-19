@@ -11,12 +11,12 @@
   <ThingCategoryDef>
     <defName>AlienTechBionics</defName>
     <label>Advanced Bionics</label>
-    <parent>BodyPartsBionic</parent>
+    <parent>BodyPartsUltra</parent>
   </ThingCategoryDef>
   <ThingCategoryDef>
     <defName>StimulatorsTech</defName>
     <label>Stimulators</label>
-    <parent>BodyPartsBionic</parent>
+    <parent>BodyPartsUltra</parent>
   </ThingCategoryDef>
   <ThingCategoryDef>
     <defName>FluxRaceMedicine</defName>
