@@ -1,601 +1,529 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <RecipeDef>
-    <defName>MakeAlienJaw</defName>
-    <label>Make Bionic-Jaw</label>
-    <description>Upgrades to a Bionic-Jaw.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>40000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>70</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienJaw>1</AlienJaw>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResBase</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienBrain</defName>
-    <label>Make Cosmos-Tech Brain</label>
-    <description>Upgrades to a Cosmos-Tech Brain.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>45000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentSpacer</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentSpacer</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienBrain>1</AlienBrain>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>12</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPro</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienEar</defName>
-    <label>Make Advanced Bionic-Ear</label>
-    <description>Upgrades to an Advanced Bionic-Ear.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>42000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>85</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>8</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienEar>1</AlienEar>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPlus</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienEye</defName>
-    <label>Make Bionic-Eye</label>
-    <description>Upgrades to a Bionic-Eye.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>40000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>70</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienEye>1</AlienEye>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResBase</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienFoot</defName>
-    <label>Make Advanced Bionic-Foot</label>
-    <description>Upgrades to an Advanced Bionic-Foot.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>42000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>85</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>8</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienFoot>1</AlienFoot>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPlus</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienHand</defName>
-    <label>Make Bionic-Hand</label>
-    <description>Upgrades to a Bionic-Hand.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>40000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>70</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienHand>1</AlienHand>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResBase</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienHeart</defName>
-    <label>Make Cosmos-Tech Heart</label>
-    <description>Upgrades to a Cosmos-Tech Heart.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>45000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentSpacer</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentSpacer</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienHeart>1</AlienHeart>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>12</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPro</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienKidney</defName>
-    <label>Make Cosmos-Tech Kidney</label>
-    <description>Upgrades to a Cosmos-Tech Kidney.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>45000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentSpacer</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentSpacer</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienKidney>1</AlienKidney>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>12</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPro</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienLeg</defName>
-    <label>Make Advanced Bionic-Leg</label>
-    <description>Upgrades to an Advanced Bionic-Leg.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>42000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>85</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>8</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienLeg>1</AlienLeg>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPlus</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienLiver</defName>
-    <label>Make Cosmos-Tech Liver</label>
-    <description>Upgrades to a Cosmos-Tech Liver.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>45000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentSpacer</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentSpacer</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienLiver>1</AlienLiver>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>12</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPro</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienLung</defName>
-    <label>Make Bionic-Lung</label>
-    <description>Upgrades to a Bionic-Lung.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>40000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>70</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienLung>1</AlienLung>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResBase</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienSpine</defName>
-    <label>Make Advanced Bionic-Spine</label>
-    <description>Upgrades to an Advanced Bionic-Spine.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>42000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>85</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>8</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienSpine>1</AlienSpine>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPlus</researchPrerequisite>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeAlienStomach</defName>
-    <label>Make Advanced Bionic-Stomach</label>
-    <description>Upgrades to an Advanced Bionic-Stomach.</description>
-    <jobString>Upgrading Body Part</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>AlienRecipeNormal</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>42000</workAmount>
-    <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
-    <recipeUsers>
-      <li>BioLab</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>85</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>8</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <AlienStomach>1</AlienStomach>
-    </products>
-    <workSkill>Crafting</workSkill>
-    <skillRequirements>
-      <Crafting>10</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>CosmosBionicResPlus</researchPrerequisite>
-  </RecipeDef>
+
+	<!-- Not required anymore, the item def generates it automatically.
+		 These are debug recipes to prevent sudden disappearances of existing bills 
+		 No new recipe defs of these exact defnames will appear for the player,
+		 and they will be using the correct item def versions of it. 
+		 
+		 Recommend to remove in next build for reduction of unneccessary stuff -->
+
+	<RecipeDef Name="HumanoidProject_Debug_BionicRecipe" Abstract="True">
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>AlienRecipeNormal</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
+		<factionPrerequisiteTags>
+			<li>HumanoidProject_RecipeRedundancy_Debug</li>
+		</factionPrerequisiteTags>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienJaw</defName>
+		<label>Make Cosmos-Tech jaw</label>
+		<description>Upgrades to a Cosmos-Tech jaw.</description>
+		<descriptionHyperlinks><ThingDef>AlienJaw</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>70</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienJaw>1</AlienJaw>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienBrain</defName>
+		<label>Make Cosmos-Tech brain</label>
+		<description>Upgrades to a Cosmos-Tech brain.</description>
+		<descriptionHyperlinks><ThingDef>AlienBrain</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>100</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>11</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienBrain>1</AlienBrain>
+		</products>
+		<skillRequirements>
+		  <Crafting>12</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienEar</defName>
+		<label>Make Cosmos-Tech ear</label>
+		<description>Upgrades to a Cosmos-Tech ear.</description>
+		<descriptionHyperlinks><ThingDef>AlienEar</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>70</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienEar>1</AlienEar>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienEye</defName>
+		<label>Make Cosmos-Tech eye</label>
+		<description>Upgrades to a Cosmos-Tech eye.</description>
+		<descriptionHyperlinks><ThingDef>AlienEye</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>70</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienEye>1</AlienEye>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienFoot</defName>
+		<label>Make Cosmos-Tech foot</label>
+		<description>Upgrades to a Cosmos-Tech foot.</description>
+		<descriptionHyperlinks><ThingDef>AlienFoot</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>42000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>85</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienFoot>1</AlienFoot>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienHand</defName>
+		<label>Make Cosmos-Tech hand</label>
+		<description>Upgrades to a Cosmos-Tech hand.</description>
+		<descriptionHyperlinks><ThingDef>AlienHand</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>70</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienHand>1</AlienHand>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienHeart</defName>
+		<label>Make Cosmos-Tech heart</label>
+		<description>Upgrades to a Cosmos-Tech heart.</description>
+		<descriptionHyperlinks><ThingDef>AlienHeart</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>100</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>11</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienHeart>1</AlienHeart>
+		</products>
+		<skillRequirements>
+		  <Crafting>12</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienKidney</defName>
+		<label>Make Cosmos-Tech kidney</label>
+		<description>Upgrades to a Cosmos-Tech kidney.</description>
+		<descriptionHyperlinks><ThingDef>AlienKidney</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>100</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>11</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienKidney>1</AlienKidney>
+		</products>
+		<skillRequirements>
+		  <Crafting>12</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienLeg</defName>
+		<label>Make Cosmos-Tech leg</label>
+		<description>Upgrades to an Cosmos-Tech leg.</description>
+		<descriptionHyperlinks><ThingDef>AlienLeg</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>42000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>85</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienLeg>1</AlienLeg>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienLiver</defName>
+		<label>Make Cosmos-Tech liver</label>
+		<description>Upgrades to a Cosmos-Tech liver.</description>
+		<descriptionHyperlinks><ThingDef>AlienLiver</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>45000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>100</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>11</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienLiver>1</AlienLiver>
+		</products>
+		<skillRequirements>
+		  <Crafting>12</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienLung</defName>
+		<label>Make Cosmos-Tech lung</label>
+		<description>Upgrades to a Cosmos-Tech lung.</description>
+		<descriptionHyperlinks><ThingDef>AlienLung</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>42000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>85</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienLung>1</AlienLung>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienSpine</defName>
+		<label>Make Cosmos-Tech spine</label>
+		<description>Upgrades to a Cosmos-Tech spine.</description>
+		<descriptionHyperlinks><ThingDef>AlienSpine</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>42000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>85</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienSpine>1</AlienSpine>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="HumanoidProject_Debug_BionicRecipe">
+		<defName>MakeAlienStomach</defName>
+		<label>Make Cosmos-Tech stomach</label>
+		<description>Upgrades to a Cosmos-Tech stomach.</description>
+		<descriptionHyperlinks><ThingDef>AlienStomach</ThingDef></descriptionHyperlinks>
+		<jobString>Upgrading Body Part</jobString>
+		<workAmount>42000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>85</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>8</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>ComponentSpacer</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <AlienStomach>1</AlienStomach>
+		</products>
+		<skillRequirements>
+		  <Crafting>10</Crafting>
+		</skillRequirements>
+		</RecipeDef>
+
 </Defs>
