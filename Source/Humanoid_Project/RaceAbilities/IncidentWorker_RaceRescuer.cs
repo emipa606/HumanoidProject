@@ -17,20 +17,18 @@ namespace RaceAbilities
 				return false;
 			}
 			Map map = (Map)parms.target;
-			IntVec3 intVec;
-			return this.TryFindEntryCell(map, out intVec);
-		}
+            return this.TryFindEntryCell(map, out IntVec3 intVec);
+        }
 
 		// Token: 0x060000B1 RID: 177 RVA: 0x000061A4 File Offset: 0x000043A4
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			IntVec3 loc;
-			if (!this.TryFindEntryCell(map, out loc))
-			{
-				return false;
-			}
-			Gender? gender = null;
+            if (!this.TryFindEntryCell(map, out IntVec3 loc))
+            {
+                return false;
+            }
+            Gender? gender = null;
 			if (this.def.pawnFixedGender != Gender.None)
 			{
 				gender = new Gender?(this.def.pawnFixedGender);

@@ -48,13 +48,12 @@ namespace HumanAbilities
 		{
 			if (hitThing != null)
 			{
-				Pawn pawn = hitThing as Pawn;
-				if (pawn != null)
-				{
-					this.duration = Rand.Range(30, 60);
-					this.ThrowBolt(pawn.Position, pawn);
-				}
-			}
+                if (hitThing is Pawn pawn)
+                {
+                    this.duration = Rand.Range(30, 60);
+                    this.ThrowBolt(pawn.Position, pawn);
+                }
+            }
 		}
 
 		// Token: 0x06000015 RID: 21 RVA: 0x000028E2 File Offset: 0x00000AE2

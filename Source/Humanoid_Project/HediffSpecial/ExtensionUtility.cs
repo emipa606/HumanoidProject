@@ -16,7 +16,7 @@ namespace HediffSpecial
 			}
 			else
 			{
-				result = default(T);
+				result = default;
 			}
 			return result;
 		}

@@ -296,7 +296,7 @@
     <researchViewX>1</researchViewX>
     <researchViewY>4</researchViewY>
     <prerequisites>
-		<li>Bionics</li>
+      <li>Bionics</li>
       <li>BioLabRes</li>
     </prerequisites>
     <tab>AlienProduction</tab>
@@ -337,7 +337,7 @@
     <researchViewX>7</researchViewX>
     <researchViewY>1</researchViewY>
     <prerequisites>
-		<li>Bionics</li>
+      <li>Bionics</li>
       <li>DragonAlienPlants</li>
     </prerequisites>
     <tab>AlienProduction</tab>

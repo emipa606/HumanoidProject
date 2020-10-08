@@ -30,51 +30,53 @@ namespace EvaineQBionics
 		// Token: 0x06000087 RID: 135 RVA: 0x00005106 File Offset: 0x00003306
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
-			Toil toil = new Toil();
-			toil.initAction = delegate()
-			{
-				this.ticksLeft = Rand.Range(300, 900);
-				int num = 0;
-				IntVec3 c;
-				do
-				{
-					c = this.pawn.Position + GenAdj.AdjacentCellsAndInside[Rand.Range(0, 9)];
-					num++;
-					if (num > 12)
-					{
-						goto IL_6B;
-					}
-				}
-				while (!c.InBounds(this.pawn.Map) || !c.Standable(this.pawn.Map));
-				goto IL_77;
-				IL_6B:
-				c = this.pawn.Position;
-				IL_77:
-				this.job.targetA = c;
-				this.pawn.pather.StopDead();
-			};
-			toil.tickAction = delegate()
-			{
-				if (this.ticksLeft % 150 == 149)
-				{
-					FilthMaker.TryMakeFilth(this.job.targetA.Cell, base.Map, ThingDefOf.Filth_BlueVomit, this.pawn.LabelIndefinite(), 1);
-					if (this.pawn.needs.food.CurLevelPercentage > 0.1f)
-					{
-						this.pawn.needs.food.CurLevel -= this.pawn.needs.food.MaxLevel * 0.04f;
-					}
-				}
-				this.ticksLeft--;
-				if (this.ticksLeft <= 0)
-				{
-					base.ReadyForNextToil();
-					TaleRecorder.RecordTale(TaleDefOf.Vomited, new object[]
-					{
-						this.pawn
-					});
-				}
-			};
-			toil.defaultCompleteMode = ToilCompleteMode.Never;
-			toil.WithEffect(EffecterDefOf.Blue_Vomit, TargetIndex.A);
+            Toil toil = new Toil
+            {
+                initAction = delegate ()
+                {
+                    this.ticksLeft = Rand.Range(300, 900);
+                    int num = 0;
+                    IntVec3 c;
+                    do
+                    {
+                        c = this.pawn.Position + GenAdj.AdjacentCellsAndInside[Rand.Range(0, 9)];
+                        num++;
+                        if (num > 12)
+                        {
+                            goto IL_6B;
+                        }
+                    }
+                    while (!c.InBounds(this.pawn.Map) || !c.Standable(this.pawn.Map));
+                    goto IL_77;
+                IL_6B:
+                    c = this.pawn.Position;
+                IL_77:
+                    this.job.targetA = c;
+                    this.pawn.pather.StopDead();
+                },
+                tickAction = delegate ()
+                {
+                    if (this.ticksLeft % 150 == 149)
+                    {
+                        FilthMaker.TryMakeFilth(this.job.targetA.Cell, base.Map, ThingDefOf.Filth_BlueVomit, this.pawn.LabelIndefinite(), 1);
+                        if (this.pawn.needs.food.CurLevelPercentage > 0.1f)
+                        {
+                            this.pawn.needs.food.CurLevel -= this.pawn.needs.food.MaxLevel * 0.04f;
+                        }
+                    }
+                    this.ticksLeft--;
+                    if (this.ticksLeft <= 0)
+                    {
+                        base.ReadyForNextToil();
+                        TaleRecorder.RecordTale(TaleDefOf.Vomited, new object[]
+                        {
+                        this.pawn
+                        });
+                    }
+                },
+                defaultCompleteMode = ToilCompleteMode.Never
+            };
+            toil.WithEffect(EffecterDefOf.Blue_Vomit, TargetIndex.A);
 			toil.PlaySustainerOrSound(() => SoundDefOf.Vomit);
 			yield return toil;
 			yield break;

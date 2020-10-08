@@ -13,9 +13,11 @@ namespace HediffSpecial
 		{
 			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
 			List<BodyPartRecord> currentSet = new List<BodyPartRecord>();
-			List<BodyPartRecord> nextSet = new List<BodyPartRecord>();
-			nextSet.Add(startingPart);
-			do
+            List<BodyPartRecord> nextSet = new List<BodyPartRecord>
+            {
+                startingPart
+            };
+            do
 			{
 				currentSet.AddRange(nextSet);
 				nextSet.Clear();
@@ -42,7 +44,7 @@ namespace HediffSpecial
 						}
 					}
 				}
-				List<BodyPartRecord>.Enumerator enumerator = default(List<BodyPartRecord>.Enumerator);
+				List<BodyPartRecord>.Enumerator enumerator = default;
 				currentSet.Clear();
 			}
 			while (nextSet.Count > 0);
@@ -55,9 +57,11 @@ namespace HediffSpecial
 		{
 			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
 			List<BodyPartRecord> currentSet = new List<BodyPartRecord>();
-			List<BodyPartRecord> nextSet = new List<BodyPartRecord>();
-			nextSet.Add(startingPart);
-			do
+            List<BodyPartRecord> nextSet = new List<BodyPartRecord>
+            {
+                startingPart
+            };
+            do
 			{
 				currentSet.AddRange(nextSet);
 				nextSet.Clear();
@@ -93,7 +97,7 @@ namespace HediffSpecial
 						}
 					}
 				}
-				List<BodyPartRecord>.Enumerator enumerator = default(List<BodyPartRecord>.Enumerator);
+				List<BodyPartRecord>.Enumerator enumerator = default;
 				currentSet.Clear();
 			}
 			while (nextSet.Count > 0);
@@ -106,9 +110,11 @@ namespace HediffSpecial
 		{
 			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
 			List<BodyPartRecord> currentSet = new List<BodyPartRecord>();
-			List<BodyPartRecord> nextSet = new List<BodyPartRecord>();
-			nextSet.Add(startingPart);
-			do
+            List<BodyPartRecord> nextSet = new List<BodyPartRecord>
+            {
+                startingPart
+            };
+            do
 			{
 				currentSet.AddRange(nextSet);
 				nextSet.Clear();
@@ -144,7 +150,7 @@ namespace HediffSpecial
 						}
 					}
 				}
-				List<BodyPartRecord>.Enumerator enumerator = default(List<BodyPartRecord>.Enumerator);
+				List<BodyPartRecord>.Enumerator enumerator = default;
 				currentSet.Clear();
 			}
 			while (nextSet.Count > 0);
@@ -157,9 +163,11 @@ namespace HediffSpecial
 		{
 			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
 			List<BodyPartRecord> currentSet = new List<BodyPartRecord>();
-			List<BodyPartRecord> nextSet = new List<BodyPartRecord>();
-			nextSet.Add(startingPart);
-			do
+            List<BodyPartRecord> nextSet = new List<BodyPartRecord>
+            {
+                startingPart
+            };
+            do
 			{
 				currentSet.AddRange(nextSet);
 				nextSet.Clear();
@@ -195,7 +203,7 @@ namespace HediffSpecial
 						}
 					}
 				}
-				List<BodyPartRecord>.Enumerator enumerator = default(List<BodyPartRecord>.Enumerator);
+				List<BodyPartRecord>.Enumerator enumerator = default;
 				currentSet.Clear();
 			}
 			while (nextSet.Count > 0);
@@ -208,9 +216,11 @@ namespace HediffSpecial
 		{
 			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
 			List<BodyPartRecord> currentSet = new List<BodyPartRecord>();
-			List<BodyPartRecord> nextSet = new List<BodyPartRecord>();
-			nextSet.Add(startingPart);
-			do
+            List<BodyPartRecord> nextSet = new List<BodyPartRecord>
+            {
+                startingPart
+            };
+            do
 			{
 				currentSet.AddRange(nextSet);
 				nextSet.Clear();
@@ -238,7 +248,7 @@ namespace HediffSpecial
 						}
 					}
 				}
-				List<BodyPartRecord>.Enumerator enumerator = default(List<BodyPartRecord>.Enumerator);
+				List<BodyPartRecord>.Enumerator enumerator = default;
 				currentSet.Clear();
 			}
 			while (nextSet.Count > 0);
@@ -251,9 +261,11 @@ namespace HediffSpecial
 		{
 			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
 			List<BodyPartRecord> list = new List<BodyPartRecord>();
-			List<BodyPartRecord> list2 = new List<BodyPartRecord>();
-			list2.Add(startingPart);
-			do
+            List<BodyPartRecord> list2 = new List<BodyPartRecord>
+            {
+                startingPart
+            };
+            do
 			{
 				list.AddRange(list2);
 				list2.Clear();

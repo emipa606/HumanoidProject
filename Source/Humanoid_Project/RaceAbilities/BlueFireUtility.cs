@@ -87,13 +87,12 @@ namespace RaceAbilities
 			fire.fireSize = fireSize;
 			fire.AttachTo(t);
 			GenSpawn.Spawn(fire, t.Position, t.Map, Rot4.North, WipeMode.Vanish, false);
-			Pawn pawn = t as Pawn;
-			if (pawn != null)
-			{
-				pawn.jobs.StopAll(false);
-				pawn.records.Increment(RecordDefOf.TimesOnFire);
-			}
-		}
+            if (t is Pawn pawn)
+            {
+                pawn.jobs.StopAll(false);
+                pawn.records.Increment(RecordDefOf.TimesOnFire);
+            }
+        }
 
 		// Token: 0x060000D6 RID: 214 RVA: 0x00006C83 File Offset: 0x00004E83
 		public static bool IsBurning(this TargetInfo t)
@@ -138,12 +137,11 @@ namespace RaceAbilities
 			List<Thing> list = map.thingGrid.ThingsListAt(c);
 			for (int i = 0; i < list.Count; i++)
 			{
-				Fire fire = list[i] as Fire;
-				if (fire != null && fire.parent == null)
-				{
-					return true;
-				}
-			}
+                if (list[i] is Fire fire && fire.parent == null)
+                {
+                    return true;
+                }
+            }
 			return false;
 		}
 

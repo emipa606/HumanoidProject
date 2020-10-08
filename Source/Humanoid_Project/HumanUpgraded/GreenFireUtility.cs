@@ -87,13 +87,12 @@ namespace HumanUpgraded
 			fire.fireSize = fireSize;
 			fire.AttachTo(t);
 			GenSpawn.Spawn(fire, t.Position, t.Map, Rot4.North, WipeMode.Vanish, false);
-			Pawn pawn = t as Pawn;
-			if (pawn != null)
-			{
-				pawn.jobs.StopAll(false);
-				pawn.records.Increment(RecordDefOf.TimesOnFire);
-			}
-		}
+            if (t is Pawn pawn)
+            {
+                pawn.jobs.StopAll(false);
+                pawn.records.Increment(RecordDefOf.TimesOnFire);
+            }
+        }
 
 		// Token: 0x06000027 RID: 39 RVA: 0x00002E9F File Offset: 0x0000109F
 		public static bool IsBurning(this TargetInfo t)
@@ -138,12 +137,11 @@ namespace HumanUpgraded
 			List<Thing> list = map.thingGrid.ThingsListAt(c);
 			for (int i = 0; i < list.Count; i++)
 			{
-				Fire fire = list[i] as Fire;
-				if (fire != null && fire.parent == null)
-				{
-					return true;
-				}
-			}
+                if (list[i] is Fire fire && fire.parent == null)
+                {
+                    return true;
+                }
+            }
 			return false;
 		}
 

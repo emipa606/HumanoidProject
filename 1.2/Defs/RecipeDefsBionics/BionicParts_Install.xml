@@ -1,595 +1,578 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<!-- Tier 1 Cosmo-Tech -->
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienJaw</defName>
-		<label>Install Cosmos-Tech jaw</label>
-		<description>Install a Cosmos-Tech jaw.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienJaw</ThingDef>
-			<HediffDef>AddAlienJaw</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech jaw</jobString>
-		<workAmount>3400</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienJaw</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienJaw</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Jaw</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienJaw</addsHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienEar</defName>
-		<label>Install Cosmos-Tech ear</label>
-		<description>Installs a Cosmos-Tech ear.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienEar</ThingDef>
-			<HediffDef>AddAlienEar</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech ear</jobString>
-		<workAmount>3400</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienEar</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienEar</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Ear</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienEar</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienEye</defName>
-		<label>Install Cosmos-Tech eye</label>
-		<description>Installs a Cosmos-Tech eye.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienEye</ThingDef>
-			<HediffDef>AddAlienEye</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech eye</jobString>
-		<workAmount>3400</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienEye</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienEye</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Eye</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienEye</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienHand</defName>
-		<label>Install a Cosmos-Tech hand</label>
-		<description>Installs a Cosmos-Tech hand.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienHand</ThingDef>
-			<HediffDef>AddAlienHand</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech hand</jobString>
-		<workAmount>3400</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienHand</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienHand</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Hand</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienHand</addsHediff>
-	</RecipeDef>
-
-	<!-- Tier 2 Cosmos-Tech -->
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienSpine</defName>
-		<label>Install Cosmos-Tech spine</label>
-		<description>Installs a Cosmos-Tech spine.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienSpine</ThingDef>
-			<HediffDef>AddAlienSpine</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech spine</jobString>
-		<workAmount>4000</workAmount>
-		<skillRequirements>
-		  <Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-		  <li>
-			<filter>
-			  <categories>
-				<li>Medicine</li>
-			  </categories>
-			</filter>
-			<count>1</count>
-		  </li>
-		  <li>
-			<filter>
-			  <thingDefs>
-				<li>AlienSpine</li>
-			  </thingDefs>
-			</filter>
-			<count>1</count>
-		  </li>
-		</ingredients>
-		<fixedIngredientFilter>
-		  <categories>
-			<li>Medicine</li>
-		  </categories>
-		  <thingDefs>
-			<li>AlienSpine</li>
-		  </thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Spine</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienSpine</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienLeg</defName>
-		<label>Install Cosmos-Tech leg</label>
-		<description>Install a Cosmos-Tech leg.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienLeg</ThingDef>
-			<HediffDef>AddAlienLeg</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech leg</jobString>
-		<workAmount>4000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienLeg</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienLeg</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Leg</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienLeg</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienFoot</defName>
-		<label>Install Cosmos-Tech foot</label>
-		<description>Installs a Cosmos-Tech foot.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienFoot</ThingDef>
-			<HediffDef>AddAlienFoot</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech foot</jobString>
-		<workAmount>4000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienFoot</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienFoot</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Foot</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienFoot</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienLung</defName>
-		<label>Install Cosmos-Tech lung</label>
-		<description>Installs a Cosmos-Tech lung.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienLung</ThingDef>
-			<HediffDef>AddAlienLung</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech lung</jobString>
-		<workAmount>4000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienLung</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienLung</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Lung</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienLung</addsHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienStomach</defName>
-		<label>Install Cosmos-Tech stomach</label>
-		<description>Install a Cosmos-Tech stomach.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienStomach</ThingDef>
-			<HediffDef>AddAlienStomach</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech stomach</jobString>
-		<workAmount>4000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienStomach</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienStomach</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Stomach</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienStomach</addsHediff>
-	</RecipeDef>
-
-	<!-- Tier 3 Cosmos-Tech -->
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienHeart</defName>
-		<label>Install Cosmos-Tech heart</label>
-		<description>Installs a Cosmos-Tech heart.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienHeart</ThingDef>
-			<HediffDef>AddAlienHeart</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech heart</jobString>
-		<workAmount>5000</workAmount>
-		<skillRequirements>
-		  <Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienHeart</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienHeart</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Heart</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienHeart</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienKidney</defName>
-		<label>Install Cosmos-Tech kidney</label>
-		<description>Installs a Cosmos-Tech kidney.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienKidney</ThingDef>
-			<HediffDef>AddAlienKidney</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech kidney</jobString>
-		<workAmount>5000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienKidney</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienKidney</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Kidney</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienKidney</addsHediff>
-		</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienLiver</defName>
-		<label>Install Cosmos-Tech Liver</label>
-		<description>Installs a Cosmos-Tech Liver.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienLiver</ThingDef>
-			<HediffDef>AddAlienLiver</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech Liver</jobString>
-		<workAmount>5000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienLiver</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienLiver</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Liver</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienLiver</addsHediff>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EvaineQBionicParts">
-		<defName>InstallAlienBrain</defName>
-		<label>Install Cosmos-Tech brain</label>
-		<description>Installs a Cosmos-Tech brain.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AlienBrain</ThingDef>
-			<HediffDef>AddAlienBrain</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing a Cosmos-Tech brain</jobString>
-		<workAmount>5000</workAmount>
-		<skillRequirements>
-			<Medicine>12</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AlienBrain</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>AlienBrain</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AddAlienBrain</addsHediff>
-	</RecipeDef>
-
+  <!-- Tier 1 Cosmo-Tech -->
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienJaw</defName>
+    <label>Install Cosmos-Tech jaw</label>
+    <description>Install a Cosmos-Tech jaw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienJaw</ThingDef>
+      <HediffDef>AddAlienJaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech jaw</jobString>
+    <workAmount>3400</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienJaw</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienEar</defName>
+    <label>Install Cosmos-Tech ear</label>
+    <description>Installs a Cosmos-Tech ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienEar</ThingDef>
+      <HediffDef>AddAlienEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech ear</jobString>
+    <workAmount>3400</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienEar</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienEye</defName>
+    <label>Install Cosmos-Tech eye</label>
+    <description>Installs a Cosmos-Tech eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienEye</ThingDef>
+      <HediffDef>AddAlienEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech eye</jobString>
+    <workAmount>3400</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienEye</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienHand</defName>
+    <label>Install a Cosmos-Tech hand</label>
+    <description>Installs a Cosmos-Tech hand.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienHand</ThingDef>
+      <HediffDef>AddAlienHand</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech hand</jobString>
+    <workAmount>3400</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienHand</addsHediff>
+  </RecipeDef>
+  <!-- Tier 2 Cosmos-Tech -->
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienSpine</defName>
+    <label>Install Cosmos-Tech spine</label>
+    <description>Installs a Cosmos-Tech spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienSpine</ThingDef>
+      <HediffDef>AddAlienSpine</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech spine</jobString>
+    <workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienSpine</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienLeg</defName>
+    <label>Install Cosmos-Tech leg</label>
+    <description>Install a Cosmos-Tech leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienLeg</ThingDef>
+      <HediffDef>AddAlienLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech leg</jobString>
+    <workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienLeg</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienFoot</defName>
+    <label>Install Cosmos-Tech foot</label>
+    <description>Installs a Cosmos-Tech foot.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienFoot</ThingDef>
+      <HediffDef>AddAlienFoot</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech foot</jobString>
+    <workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienFoot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienFoot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Foot</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienFoot</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienLung</defName>
+    <label>Install Cosmos-Tech lung</label>
+    <description>Installs a Cosmos-Tech lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienLung</ThingDef>
+      <HediffDef>AddAlienLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech lung</jobString>
+    <workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienLung</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienStomach</defName>
+    <label>Install Cosmos-Tech stomach</label>
+    <description>Install a Cosmos-Tech stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienStomach</ThingDef>
+      <HediffDef>AddAlienStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech stomach</jobString>
+    <workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienStomach</addsHediff>
+  </RecipeDef>
+  <!-- Tier 3 Cosmos-Tech -->
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienHeart</defName>
+    <label>Install Cosmos-Tech heart</label>
+    <description>Installs a Cosmos-Tech heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienHeart</ThingDef>
+      <HediffDef>AddAlienHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech heart</jobString>
+    <workAmount>5000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienHeart</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienKidney</defName>
+    <label>Install Cosmos-Tech kidney</label>
+    <description>Installs a Cosmos-Tech kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienKidney</ThingDef>
+      <HediffDef>AddAlienKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech kidney</jobString>
+    <workAmount>5000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienKidney</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienLiver</defName>
+    <label>Install Cosmos-Tech Liver</label>
+    <description>Installs a Cosmos-Tech Liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienLiver</ThingDef>
+      <HediffDef>AddAlienLiver</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech Liver</jobString>
+    <workAmount>5000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienLiver</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="EvaineQBionicParts">
+    <defName>InstallAlienBrain</defName>
+    <label>Install Cosmos-Tech brain</label>
+    <description>Installs a Cosmos-Tech brain.</description>
+    <descriptionHyperlinks>
+      <ThingDef>AlienBrain</ThingDef>
+      <HediffDef>AddAlienBrain</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing a Cosmos-Tech brain</jobString>
+    <workAmount>5000</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AlienBrain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AlienBrain</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AddAlienBrain</addsHediff>
+  </RecipeDef>
 </Defs>

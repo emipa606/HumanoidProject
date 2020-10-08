@@ -59,16 +59,15 @@ namespace RaceWeapons
 				base.Tick();
 				this.Destroy(DestroyMode.Vanish);
 			}
-			Pawn pawn = this.launcher as Pawn;
-			if (pawn != null)
-			{
-				Pawn_StanceTracker stances = pawn.stances;
-				if (stances != null && (!(stances.curStance is Stance_Busy) || pawn.Dead))
-				{
-					this.Destroy(DestroyMode.Vanish);
-				}
-			}
-			this.tickCounter++;
+            if (this.launcher is Pawn pawn)
+            {
+                Pawn_StanceTracker stances = pawn.stances;
+                if (stances != null && (!(stances.curStance is Stance_Busy) || pawn.Dead))
+                {
+                    this.Destroy(DestroyMode.Vanish);
+                }
+            }
+            this.tickCounter++;
 		}
 
 		// Token: 0x060000A3 RID: 163 RVA: 0x00005804 File Offset: 0x00003A04
@@ -218,9 +217,8 @@ namespace RaceWeapons
 				for (int j = 0; j < list.Count; j++)
 				{
 					Thing thing2 = list[j];
-					Pawn pawn = thing2 as Pawn;
-					float num;
-					if (pawn != null)
+                    float num;
+                    if (thing2 is Pawn pawn)
 					{
 						num = 0.5f * Mathf.Clamp(pawn.BodySize, 0.1f, 2f);
 						if (pawn.GetPosture() != PawnPosture.Standing && GenGeo.MagnitudeHorizontalSquared(this.origin - this.destination) >= 20.25f)
@@ -245,13 +243,12 @@ namespace RaceWeapons
 				this.Impact(null);
 				return;
 			}
-			Pawn pawn2 = this.usedTarget.Thing as Pawn;
-			if (pawn2 != null && pawn2.GetPosture() != PawnPosture.Standing && GenGeo.MagnitudeHorizontalSquared(this.origin - this.destination) >= 20.25f && !Rand.Chance(0.2f))
-			{
-				this.Impact(null);
-				return;
-			}
-			this.Impact(this.usedTarget.Thing);
+            if (this.usedTarget.Thing is Pawn pawn2 && pawn2.GetPosture() != PawnPosture.Standing && GenGeo.MagnitudeHorizontalSquared(this.origin - this.destination) >= 20.25f && !Rand.Chance(0.2f))
+            {
+                this.Impact(null);
+                return;
+            }
+            this.Impact(this.usedTarget.Thing);
 		}
 
 		// Token: 0x060000AA RID: 170 RVA: 0x00005EDC File Offset: 0x000040DC
@@ -266,14 +263,13 @@ namespace RaceWeapons
 				float armorPenetration = this.def.projectile.GetArmorPenetration(base.ArmorPenetration, null);
 				DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, (float)damageAmount, armorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, null);
 				hitThing.TakeDamage(dinfo);
-				Pawn pawn = hitThing as Pawn;
-				if (pawn != null && !pawn.Downed && Rand.Value < this.compED.chanceToProc)
-				{
-					MoteMaker.ThrowMicroSparks(this.destination, base.Map);
-					hitThing.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed(this.compED.damageDef, true), (float)this.compED.damageAmount, armorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
-					return;
-				}
-			}
+                if (hitThing is Pawn pawn && !pawn.Downed && Rand.Value < this.compED.chanceToProc)
+                {
+                    MoteMaker.ThrowMicroSparks(this.destination, base.Map);
+                    hitThing.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed(this.compED.damageDef, true), (float)this.compED.damageAmount, armorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
+                    return;
+                }
+            }
 			else
 			{
 				SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(base.Position, map, false));

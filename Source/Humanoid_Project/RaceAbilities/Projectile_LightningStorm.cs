@@ -48,13 +48,12 @@ namespace RaceAbilities
 		{
 			if (hitThing != null)
 			{
-				Pawn pawn = hitThing as Pawn;
-				if (pawn != null)
-				{
-					this.duration = Rand.Range(30, 60);
-					this.ThrowBolt(pawn.Position, pawn);
-				}
-			}
+                if (hitThing is Pawn pawn)
+                {
+                    this.duration = Rand.Range(30, 60);
+                    this.ThrowBolt(pawn.Position, pawn);
+                }
+            }
 		}
 
 		// Token: 0x060000EB RID: 235 RVA: 0x00007426 File Offset: 0x00005626

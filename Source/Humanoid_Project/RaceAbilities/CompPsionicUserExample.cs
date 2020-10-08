@@ -22,7 +22,7 @@ namespace RaceAbilities
 				else
 				{
 					Pawn_HealthTracker health = pawn.health;
-					flag = (((health != null) ? health.hediffSet : null) != null);
+					flag = ((health?.hediffSet) != null);
 				}
 				return flag && base.Pawn.health.hediffSet.HasHediff(HediffDef.Named("AvianHeDiff"), false);
 			}

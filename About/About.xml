@@ -25,7 +25,7 @@
     <li>
       <packageId>jecrell.jecstools</packageId>
       <displayName>JecsTools</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2195729899</steamWorkshopUrl>
     </li>
   </modDependencies>
   <loadAfter>
@@ -33,7 +33,7 @@
     <li>erdelf.HumanoidAlienRaces</li>
     <li>jecrell.jecstools</li>
   </loadAfter>
-  <description>Update of EvaineQs mod for RimWorld 1.1
+  <description>Update of EvaineQs mod
 https://ludeon.com/forums/index.php?topic=49125.0
 
 [img]https://i.imgur.com/GYswkZ7.png[/img]
@@ -45,6 +45,7 @@ Non-steam version:
 https://github.com/emipa606/HumanoidProject
 
 - Removed the settlement-generation as it needs a rewrite to use the new Quest-system
+- A lot of rebalancing done by Tarojun added
 
 This is a big mod so I may have missed some things in it, please report errors here or on the Discord-server.
 	

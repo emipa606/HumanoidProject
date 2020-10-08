@@ -48,13 +48,12 @@ namespace HumanUpgraded
 		{
 			if (hitThing != null)
 			{
-				Pawn pawn = hitThing as Pawn;
-				if (pawn != null)
-				{
-					this.duration = Rand.Range(30, 60);
-					this.ThrowBolt(pawn.Position, pawn);
-				}
-			}
+                if (hitThing is Pawn pawn)
+                {
+                    this.duration = Rand.Range(30, 60);
+                    this.ThrowBolt(pawn.Position, pawn);
+                }
+            }
 		}
 
 		// Token: 0x06000033 RID: 51 RVA: 0x0000337A File Offset: 0x0000157A

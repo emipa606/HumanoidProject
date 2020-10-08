@@ -28,12 +28,11 @@ namespace HumanAbilities
 				{
 					FilthMaker.TryMakeFilth(intVec, map, ThingDefOf.Filth_Ash, 1);
 				}
-				Plant plant = victim as Plant;
-				if (plant != null && victim.def.plant.IsTree && plant.LifeStage != PlantLifeStage.Sowing && victim.def != ThingDefOf.BurnedTree)
-				{
-					((DeadPlant)GenSpawn.Spawn(ThingDefOf.BurnedTree, victim.Position, map, WipeMode.Vanish)).Growth = plant.Growth;
-				}
-			}
+                if (victim is Plant plant && victim.def.plant.IsTree && plant.LifeStage != PlantLifeStage.Sowing && victim.def != ThingDefOf.BurnedTree)
+                {
+                    ((DeadPlant)GenSpawn.Spawn(ThingDefOf.BurnedTree, victim.Position, map, WipeMode.Vanish)).Growth = plant.Growth;
+                }
+            }
 			return damageResult;
 		}
 

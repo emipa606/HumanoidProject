@@ -50,15 +50,14 @@ namespace HediffSpecial
 			{
 				foreach (Hediff hediff in enumerable)
 				{
-					HediffWithComps hediffWithComps = hediff as HediffWithComps;
-					if (hediffWithComps != null)
-					{
-						HediffComp_TendDuration hediffComp_TendDuration = hediffWithComps.TryGetComp<HediffComp_TendDuration>();
-						hediffComp_TendDuration.tendQuality = 2f;
-						hediffComp_TendDuration.tendTicksLeft = Find.TickManager.TicksGame;
-						this.pawn.health.Notify_HediffChanged(hediff);
-					}
-				}
+                    if (hediff is HediffWithComps hediffWithComps)
+                    {
+                        HediffComp_TendDuration hediffComp_TendDuration = hediffWithComps.TryGetComp<HediffComp_TendDuration>();
+                        hediffComp_TendDuration.tendQuality = 2f;
+                        hediffComp_TendDuration.tendTicksLeft = Find.TickManager.TicksGame;
+                        this.pawn.health.Notify_HediffChanged(hediff);
+                    }
+                }
 			}
 		}
 

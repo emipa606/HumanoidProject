@@ -13,7 +13,7 @@ namespace RaceAbilities
 		public override void ExposeData()
 		{
 			base.ExposeData();
-			Scribe_Values.Look<IntVec2>(ref this.centerLocation, "centerLocation", default(IntVec2), false);
+			Scribe_Values.Look<IntVec2>(ref this.centerLocation, "centerLocation", default, false);
 			Scribe_Values.Look<int>(ref this.areaRadius, "areaRadius", 0, false);
 			Scribe_Values.Look<int>(ref this.nextLightningTicks, "nextLightningTicks", 0, false);
 		}
