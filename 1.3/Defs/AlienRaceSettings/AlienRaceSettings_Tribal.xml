@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.RaceSettings>
+    <defName>HumanoidProjectRaceSettingsTribal</defName>
+    <pawnKindSettings>
+      <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>AvianTribal</li>
+              </kindDefs>
+              <chance>10.0</chance>
+            </li>
+            <li>
+              <kindDefs>
+                <li>BlueMagmaRaceTribal</li>
+              </kindDefs>
+              <chance>35.0</chance>
+            </li>
+            <li>
+              <kindDefs>
+                <li>MagmaRaceTribal</li>
+              </kindDefs>
+              <chance>40.0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>
+</Defs>

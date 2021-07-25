@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="MultiRaceBodyParts" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <pathCost>10</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Mass>1</Mass>
+    </statBases>
+    <tradeTags>
+      <li>TechHediff</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+  </ThingDef>
+  <ThingDef Name="SpecialCosmosBionics" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>AlienTechBionics</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>0.5</Mass>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <WorkToMake>40000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>AlienRecipeNormal</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedPart</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>CosmosBionicResBase</researchPrerequisite>
+      <recipeUsers>
+        <li>BioLab</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Name="SpecialCosmosBionicsPlus" ParentName="SpecialCosmosBionics" Abstract="True">
+    <statBases>
+      <WorkToMake>42000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>CosmosBionicResPlus</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Name="SpecialCosmosBionicsPro" ParentName="SpecialCosmosBionicsPlus" Abstract="True">
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>CosmosBionicResPro</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <!-- Tier 1 Cosmos-Tech -->
+  <ThingDef ParentName="SpecialCosmosBionics">
+    <defName>AlienJaw</defName>
+    <label>Cosmos-Tech jaw</label>
+    <description>A unique bionic jaw designed by Cosmos Tech Ind. in the North of Westeros Sea. Grants the ability to do a painful toxic bite, as well as enchanting user's talking ability. This item also adds a beauty bonus to your beloved colonist.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienJaw</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienJaw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionics">
+    <defName>AlienEar</defName>
+    <label>Cosmos-Tech ear</label>
+    <description>A unique bionic ear designed by Cosmos Tech Ind. They looked really deep into the users's hearing capabilities and upgraded them with a simple piece of technology. This bionic improves hearing and enhances colonist social impact. It takes three stages to adapt completely to the user.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienEar</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienEar</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionics">
+    <defName>AlienEye</defName>
+    <label>Cosmos-Tech eye</label>
+    <description>A unique bionic eye designed by Cosmos Tech Ind. Grants a better visibility in extremely dark conditions. The prosthetic was designed during the "Avian Golden Age" to improve soldiers sight up to 40%. This advanced eye also improves surgery success and shooting accuracy. It takes three stages to reach the max efficiency peak.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienEye</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienEye</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionics">
+    <defName>AlienHand</defName>
+    <label>Cosmos-Tech hand</label>
+    <description>A unique bionic hand designed by Cosmos Tech Ind. Grants the ability to use sonic speed punches, as well as improving pawn medical operation speed, aiming delay and melee accuracy.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienHand</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienHand</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <!-- Tier 2 Cosmos-Tech -->
+  <ThingDef ParentName="SpecialCosmosBionicsPlus">
+    <defName>AlienSpine</defName>
+    <label>Cosmos-Tech spine</label>
+    <description>A unique bionic spine designed by Cosmos Tech Ind. A masterpiece of the Avian Tech, improves the manipulation and movement the user in a really efficient way, often sold on the Black Market. The spine also grants sleeping comfort, increasing rest rate.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienSpine</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienSpine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPlus">
+    <defName>AlienLeg</defName>
+    <label>Cosmos-Tech leg</label>
+    <description>A unique bionic leg designed by Cosmos Tech Ind. A simple leg built in a rush from the Cosmos Ind. Grants an improved movement speed to the user.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienLeg</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienLeg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPlus">
+    <defName>AlienFoot</defName>
+    <label>Cosmos-Tech foot</label>
+    <description>An unique bionic foot designed by Cosmos Tech Ind. Well not directly from Cosmos Industry, the technology was stolen from the Flux Tech Corp. This prosthetic grants the ability to move faster as well as improving colonist hunting stealth in a very efficient way. It takes three stages to reach the max efficiency peak.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienFoot</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienFoot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPlus">
+    <defName>AlienLung</defName>
+    <label>Cosmos-Tech lung</label>
+    <description>A unique bionic lung designed by Cosmos Tech Ind. A good chunk of old Avian tech, which improves the respiratory system. It takes three stages to reach the max efficiency peak.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienLung</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienLung</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPlus">
+    <defName>AlienStomach</defName>
+    <label>Cosmos-Tech stomach</label>
+    <description>A unique bionic stomach designed by Cosmos Tech Ind. A really good chunk of technology that improves the metabolic system as well as boosting immunity gain speed and reducing food poison chance.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienStomach</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienStomach</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <!-- Tier 3 Cosmos-Tech -->
+  <ThingDef ParentName="SpecialCosmosBionicsPro">
+    <defName>AlienHeart</defName>
+    <label>Cosmos-Tech heart</label>
+    <description>A unique bionic heart designed by Cosmos Tech Ind. An extremely rare piece of technology, that improves blood pumping and blood filtration up to 40%, as well as boosting movement speed in a minimal way. It takes five stages to reach the max efficiency peak.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienHeart</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienHeart</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>11</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.75</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPro">
+    <defName>AlienKidney</defName>
+    <label>Cosmos-Tech kidney</label>
+    <description>A unique bionic kidney designed by Cosmos Tech Ind. An extremely useful piece of technology that improves blood filtration up to 30% as well as boosting resistance to toxic environments. It adapts really fast to the user's body.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienKidney</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienKidney</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>11</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.75</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPro">
+    <defName>AlienLiver</defName>
+    <label>Cosmos-Tech liver</label>
+    <description>A unique bionic liver designed by Cosmos Tech Ind. This complex implant boosts liver efficiency and immunity Gain Speed.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienLiver</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienLiver</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>11</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.75</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+  <ThingDef ParentName="SpecialCosmosBionicsPro">
+    <defName>AlienBrain</defName>
+    <label>Cosmos-Tech brain</label>
+    <description>An artificial brain designed by Cosmos Tech Ind. The brain itself is powered by a neural AI which grants the user an enchanted consciousness, better learning skills, as well as pain reduction. It takes four stages to reach the max efficiency peak.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallAlienBrain</RecipeDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Prosthetics/AlienBrain</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>11</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>1.0</Mass>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+  </ThingDef>
+</Defs>

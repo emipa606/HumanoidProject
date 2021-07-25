@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef Name="SpecialRaceMeal" Abstract="True">
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+        <li>Meat_Megaspider</li>
+        <li>InsectJelly</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  <!--====== X FoodProduction ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookAlienMeatRed</defName>
+    <label>Fabricate Volcanic Fawn meat</label>
+    <description>Fabricate a Strange meat with a unique black and red Color that has normal properties similar to regular common meat. (Can be Produced in Early stages of the game, Unlocked from Tier 1 of Alien Plants)</description>
+    <jobString>Cooking Volcanic Fawn meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>500</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AlienPlantRaw</li>
+          </categories>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <AlienMeatRed>5</AlienMeatRed>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>FoodProduction</researchPrerequisite>
+  </RecipeDef>
+  <!--====== X AlienFoodPatternGreen ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookAlienMeatGreen</defName>
+    <label>Fabricate Axolot meat</label>
+    <description>Fabricate a Strange meat that has a mysterious green color. The meat origin is from advanced plant-based lifeforms similar to trees. (Can be Produced in Early stages of the game, Unlocked from Tier 1 of Alien Plants)</description>
+    <jobString>Cooking Axolot meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>500</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AlienPlantRaw</li>
+          </categories>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <AlienMeatGreen>5</AlienMeatGreen>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AlienFoodPatternGreen</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookAlienMeatStrange</defName>
+    <label>Fabricate Woodchuck meat</label>
+    <description>Fabricate a Strange meat thats origin is from advanced plant-based lifeforms capable of photosynthesis. (Can be Produced in Early stages of the game, Unlocked from Tier 1 of Alien Plants)</description>
+    <jobString>Cooking Woodchuck meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>500</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>AlienPlantRaw</li>
+          </categories>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <AlienMeatStrange>5</AlienMeatStrange>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AlienFoodPatternGreen</researchPrerequisite>
+  </RecipeDef>
+  <!--====== X AlienFoodPatternLightGreen ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookAlienSteak</defName>
+    <label>Fabricate Bio Steak</label>
+    <description>Cooks weird Bio Steak from a Mysterious poison Alien Plant that normally lives on planets with rich oxygen atmosphere... those plants have a similar molecular structure to jellyfish. (Can be produced from a Tier 3 of Alien Plants, Demon Lily)</description>
+    <jobString>Cooking Bio Steak.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>600</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DemonLily</li>
+          </thingDefs>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <AlienSteak>3</AlienSteak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AlienFoodPatternLightGreen</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookGeneticSteak</defName>
+    <label>Fabricate Genetic Steak</label>
+    <description>Cooks Genetic Steak from a Mysterious poison Alien Plant that normally live on planets with rich oxygen atmosphere and are similar to living sponge. (Can be produced from a Tier 3 of Alien Plants, Demon Lily)</description>
+    <jobString>Cooking Genetic Steak.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>600</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PhoenixJuniper</li>
+          </thingDefs>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <GeneticSteak>3</GeneticSteak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AlienFoodPatternLightGreen</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookGreenSteak</defName>
+    <label>Fabricate Masked Steak</label>
+    <description>Cooks Masked Steak from a Mysterious poison Alien Plant that normally live on planets with rich oxygen atmosphere. (Can be produced from a Tier 3 of Alien Plants, Demon Lily)</description>
+    <jobString>Cooking Masked Steak.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>600</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DemonLily</li>
+          </thingDefs>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <GreenSteak>3</GreenSteak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AlienFoodPatternLightGreen</researchPrerequisite>
+  </RecipeDef>
+  <!--====== X AlienFoodPatternBlue ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookSyntheticMeatBlue</defName>
+    <label>Fabricate Synthetic Lunar meat</label>
+    <description>Cooks Synthetic Lunar meat from a Dark Energy Plant that live in methane rich atmosphere. (Can be produced from a Tier 2 of Alien Plants, Nightmare Brier)</description>
+    <jobString>Cooking Synthetic Lunar meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>550</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NightmareBrier</li>
+          </thingDefs>
+        </filter>
+        <count>4.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <SyntheticMeatBlue>3</SyntheticMeatBlue>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodPatternBlue</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookSyntheticMeatGreen</defName>
+    <label>Fabricate Synthetic Bombay meat</label>
+    <description>Cooks Synthetic Bombay meat from a Dark Energy Plant that live in methane and nitrogen rich atmosphere. (Can be produced from a Tier 2 of Alien Plants, Nightmare Brier)</description>
+    <jobString>Cooking Synthetic Bombay meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>550</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NightmareBrier</li>
+          </thingDefs>
+        </filter>
+        <count>4.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <SyntheticMeatGreen>3</SyntheticMeatGreen>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodPatternBlue</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookSyntheticMeatYellow</defName>
+    <label>Fabricate Synthetic Lime meat</label>
+    <description>Cooks Synthetic Lime meat from a Mysterious Plant commonly found in Extreme Temperature that can peek over 700°...Not sure how we managed to grow it in normal conditions.... (Can be produced from a Tier 2 of Alien Plants, Magmatite)</description>
+    <jobString>Cooking Synthetic Lime meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>550</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Magmatite</li>
+          </thingDefs>
+        </filter>
+        <count>4.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <SyntheticMeatYellow>3</SyntheticMeatYellow>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodPatternBlue</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookSyntheticMeatZebra</defName>
+    <label>Fabricate Pulse-Saffron meat</label>
+    <description>Cooks Pulse-Saffron meat from a Mysterious Plant commonly found in Extreme Temperature that can peek over 700°...Not sure how we managed to grow it in normal conditions.... (Can be produced from a Tier 2 of Alien Plants, Magmatite)</description>
+    <jobString>Cooking Pulse-Saffron meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>600</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Magmatite</li>
+          </thingDefs>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <SyntheticMeatZebra>4</SyntheticMeatZebra>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodPatternBlue</researchPrerequisite>
+  </RecipeDef>
+  <!--====== X AlienFoodPatternDark ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookSyntheticMeatMagma</defName>
+    <label>Fabricate Synthetic Chimera meat</label>
+    <description>Cooks resistant Synthetic Chimera meat from Alien Plants that live in sulfuric acid rich atmosphere. (Can be produced from a Tier 3 of Alien Plants, Venomous Toothwort)</description>
+    <jobString>Cooking Synthetic Chimera meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>600</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VenomousToothwort</li>
+          </thingDefs>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <SyntheticMeatMagma>4</SyntheticMeatMagma>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodPatternDark</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookSyntheticMeatUnknown</defName>
+    <label>Fabricate Synthetic Coated meat</label>
+    <description>Cooks resistant Synthetic Coated meat from Alien Plants that live in sulfuric acid rich atmosphere. (Can be produced from a Tier 3 of Alien Plants, Venomous Toothwort)</description>
+    <jobString>Cooking Synthetic Coated meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>550</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VenomousToothwort</li>
+          </thingDefs>
+        </filter>
+        <count>5.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <SyntheticMeatUnknown>4</SyntheticMeatUnknown>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodPatternDark</researchPrerequisite>
+  </RecipeDef>
+  <!--====== X AlienFoodMixedSimple ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookGlowingMeat</defName>
+    <label>Fabricate Glowing meat</label>
+    <description>Cooks advanced Glowing meat with good nutrition yield and soft structure. (Can be produced from a Tier 1 of Alien Plants, Creepy Tulip)</description>
+    <jobString>Cooking Glowing meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>700</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CreepyTulip</li>
+          </thingDefs>
+        </filter>
+        <count>4.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <GlowingMeat>3</GlowingMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodMixedSimple</researchPrerequisite>
+  </RecipeDef>
+  <!--====== X AlienFoodMixedAdvanced ======-->
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookRainbowMeat</defName>
+    <label>Fabricate Replicated meat</label>
+    <description>Cooks intermediate advanced Replicated meat really close to the Natural, with very good nutrition yield and soft structure. (Can be produced from a Tier 4 of Alien Plants, Funeral Ivy)</description>
+    <jobString>Cooking Replicated meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>700</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FuneralIvy</li>
+          </thingDefs>
+        </filter>
+        <count>3.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <RainbowMeat>5</RainbowMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodMixedAdvanced</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookZebraStyleMeat</defName>
+    <label>Fabricate Zebra meat</label>
+    <description>Cooks very advanced Zebra meat with good nutrition yield and soft structure. (Can be produced from a Tier 4 of Alien Plants, Funeral Ivy)</description>
+    <jobString>Cooking Zebra meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>550</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FuneralIvy</li>
+          </thingDefs>
+        </filter>
+        <count>3.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <ZebraStyleMeat>5</ZebraStyleMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodMixedSimple</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef ParentName="SpecialRaceMeal">
+    <defName>CookReplicatedMeat</defName>
+    <label>Fabricate Replicated steak</label>
+    <description>Cooks intermediate advanced Replicated Steak really close to the Natural, with very good nutrition yield and soft structure. (Can be produced from a Tier 4 of Alien Plants, Funeral Ivy)</description>
+    <jobString>Cooking Replicated Steak.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>AlienRecipeNormal</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>True</allowMixingIngredients>
+    <workAmount>700</workAmount>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>BioLab</li>
+    </recipeUsers>
+    <fixedIngredientFilter>
+    </fixedIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FuneralIvy</li>
+          </thingDefs>
+        </filter>
+        <count>3.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <ReplicatedSteak>5</ReplicatedSteak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AlienFoodMixedAdvanced</researchPrerequisite>
+  </RecipeDef>
+</Defs>

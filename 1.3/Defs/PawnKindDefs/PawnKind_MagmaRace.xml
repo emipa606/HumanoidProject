@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="ColonistBaseKind">
+    <defName>MagmaRaceColonist</defName>
+    <race>MagmaRace</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="SlaveBaseKind">
+    <defName>MagmaRaceSlave</defName>
+    <race>MagmaRace</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="RefugeeBaseKind">
+    <defName>MagmaRaceRefugee</defName>
+    <race>MagmaRace</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="VillagerBaseKind">
+    <defName>MagmaRaceVillager</defName>
+    <race>MagmaRace</race>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TribalBaseKind">
+    <defName>MagmaRaceTribal</defName>
+    <race>MagmaRace</race>
+  </PawnKindDef>
+</Defs>

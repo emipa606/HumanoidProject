@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>AvianHeDiff</defName>
+    <label>Avian Training</label>
+    <description>Avian Training</description>
+    <stages>
+      <li>
+        <hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
+        <statOffsets>
+          <BedRestEffectiveness>0.4</BedRestEffectiveness>
+          <EquipDelay>-0.8</EquipDelay>
+          <HuntingStealth>0.5</HuntingStealth>
+          <CarryingCapacity>85</CarryingCapacity>
+          <ShootingAccuracyPawn>12</ShootingAccuracyPawn>
+          <MeleeDPS>0.2</MeleeDPS>
+          <MeleeArmorPenetration>0.2</MeleeArmorPenetration>
+          <MeleeHitChance>4</MeleeHitChance>
+          <MeleeDodgeChance>0.3</MeleeDodgeChance>
+          <GlobalLearningFactor>0.4</GlobalLearningFactor>
+          <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>MagmaRaceHeDiff</defName>
+    <label>Volcanian Training</label>
+    <description>Volcanian Training</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <CarryingCapacity>85</CarryingCapacity>
+          <PsychicSensitivity>-0.5</PsychicSensitivity>
+          <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+          <ConstructionSpeed>0.1</ConstructionSpeed>
+          <ResearchSpeed>0.2</ResearchSpeed>
+          <GlobalLearningFactor>0.2</GlobalLearningFactor>
+          <ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+          <ToxicSensitivity>-1.5</ToxicSensitivity>
+          <MiningSpeed>0.3</MiningSpeed>
+          <MiningYield>0.3</MiningYield>
+          <TradePriceImprovement>0.3</TradePriceImprovement>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>BlueMagmaRaceHeDiff</defName>
+    <label>Volcanian Training</label>
+    <description>Volcanian Training</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <PsychicSensitivity>-0.5</PsychicSensitivity>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+          <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+          <EquipDelay>-0.2</EquipDelay>
+          <ConstructionSpeed>0.1</ConstructionSpeed>
+          <ResearchSpeed>0.2</ResearchSpeed>
+          <GlobalLearningFactor>0.4</GlobalLearningFactor>
+          <ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+          <ToxicSensitivity>-1.5</ToxicSensitivity>
+          <MiningSpeed>0.2</MiningSpeed>
+          <MiningYield>0.2</MiningYield>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

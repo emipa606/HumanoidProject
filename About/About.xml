@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Humanoid Project (Continued)</name>
   <packageId>Mlie.HumanoidProject</packageId>
@@ -8,6 +8,7 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -59,7 +60,7 @@ This is a big mod so I may have missed some things in it, please report errors h
 [b]First release of HUMANOID PROJECT[/b]
 	
 [b]COMPATIBILITY[/b]
-A [b]MOD[/b] called ([SYR] Prosthetic Icons) will override my Prosthetics Icons (So i recommend to Install a MOD called "BIONIC ICONS" by AUTOMATIC which doesn't have any conflicts with my MOD)
+A [b]MOD[/b] called ([SYR] Prosthetic Icons) will override my Prosthetics Icons (So i recommend to Install a MOD called &quot;BIONIC ICONS&quot; by AUTOMATIC which doesn&apos;t have any conflicts with my MOD)
 
 [b]FEATURES[/b]
 The Humanoid Project features three new Playable [b]Races[/b].
@@ -88,12 +89,12 @@ A new Incident Connected to Factions. (Factions can send you Quests of an Infest
 New type of Weathers:
 An [b]EMP-Storm[/b] is incoming and all of the electronic Devices have a chance to not work properly.
 
-An [b]Anomaly Storm[/b]. This storm has a massive area of impact so be careful when wandering outside of the Colony. The Storm will start massive wildfires in entire area, but hopefully the rain will put it out. Don't stay close to trees. Caution is advised. (This storm due to chemical reactions cause a Bluish-Fire) There is also a Dry Version of this Storm which means that it can happen even without Rain.
+An [b]Anomaly Storm[/b]. This storm has a massive area of impact so be careful when wandering outside of the Colony. The Storm will start massive wildfires in entire area, but hopefully the rain will put it out. Don&apos;t stay close to trees. Caution is advised. (This storm due to chemical reactions cause a Bluish-Fire) There is also a Dry Version of this Storm which means that it can happen even without Rain.
 
 And a [b]Runic Storm[/b] that can blast a small area with repeated and massive lightning strikes
 
 [b]PLANTS[/b]
-Featuring tons of New Plants that can be used to produce Food and even Advanced-Stimulator's.
+Featuring tons of New Plants that can be used to produce Food and even Advanced-Stimulator&apos;s.
 
 [b]FOOD[/b]
 The Mod features are also tons of new Synthetic-Food which can be Fabricated at the Bio-Lab.
@@ -102,7 +103,7 @@ The Mod features are also tons of new Synthetic-Food which can be Fabricated at 
 
 [b]Bio-Lab[/b]. The Bio-Lab is used to manufacture Synthetic-Food and some of the Advanced-Bionics. Be careful this Structure can cause a massive Explosion that has a Bluish-Fire that can be Extremely hard to Extinguish.
 
-[b]Cosmos-Bench[/b]. The Cosmos-Bench is used to manufacture Energy-Weapons. Beware this Building can Heat your Room to Extreme-Levels if you don't use a good cooling solution.
+[b]Cosmos-Bench[/b]. The Cosmos-Bench is used to manufacture Energy-Weapons. Beware this Building can Heat your Room to Extreme-Levels if you don&apos;t use a good cooling solution.
 
 
 [img]https://i.imgur.com/Rs6T6cr.png[/img]
@@ -114,6 +115,6 @@ The Mod features are also tons of new Synthetic-Food which can be Fabricated at 
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
+
 </description>
 </ModMetaData>
-
