@@ -260,11 +260,15 @@
       </generalSettings>
       <styleSettings>
         <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
           <key>BeardDef</key>
           <value>
-            <styleTags>
-              <li>NoBeard</li>
-            </styleTags>
+            <hasStyle>false</hasStyle>
           </value>
         </li>
       </styleSettings>
