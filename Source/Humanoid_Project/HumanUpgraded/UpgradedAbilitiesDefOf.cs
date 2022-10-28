@@ -1,13 +1,10 @@
-﻿using RimWorld;
+using RimWorld;
 using AbilityDef = AbilityUser.AbilityDef;
 
-namespace HumanUpgraded
+namespace HumanUpgraded;
+
+[DefOf]
+public static class UpgradedAbilitiesDefOf
 {
-    // Token: 0x02000010 RID: 16
-    [DefOf]
-    public static class UpgradedAbilitiesDefOf
-    {
-        // Token: 0x0400001C RID: 28
-        public static AbilityDef UpgradedStorm;
-    }
+    public static AbilityDef UpgradedStorm;
 }

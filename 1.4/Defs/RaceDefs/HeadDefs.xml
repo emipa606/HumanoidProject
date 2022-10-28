@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>AvianHead_Female_Average_Normal</defName>
+    <graphicPath>Things/PawnRace/Avian/Head_Avian/Female_Average_Normal</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>AvianHead_Female_Average_Pointy</defName>
+    <graphicPath>Things/PawnRace/Avian/Head_Avian/Female_Average_Pointy</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>AvianHead_Male_Average_Normal</defName>
+    <graphicPath>Things/PawnRace/Avian/Head_Avian/Male_Average_Normal</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>AvianHead_Male_Average_Pointy</defName>
+    <graphicPath>Things/PawnRace/Avian/Head_Avian/Male_Average_Pointy</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BlueHead_Female_Average_Normal</defName>
+    <graphicPath>Things/PawnRace/BlueMagmaRace/BlueHead_Magma/Female_Average_Normal</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BlueHead_Female_Average_Pointy</defName>
+    <graphicPath>Things/PawnRace/BlueMagmaRace/BlueHead_Magma/Female_Average_Pointy</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BlueHead_Male_Average_Normal</defName>
+    <graphicPath>Things/PawnRace/BlueMagmaRace/BlueHead_Magma/Male_Average_Normal</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BlueHead_Male_Average_Pointy</defName>
+    <graphicPath>Things/PawnRace/BlueMagmaRace/BlueHead_Magma/Male_Average_Pointy</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Magma_Female_Average_Normal</defName>
+    <graphicPath>Things/PawnRace/MagmaRace/Head_Magma/Female_Average_Normal</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Magma_Female_Average_Pointy</defName>
+    <graphicPath>Things/PawnRace/MagmaRace/Head_Magma/Female_Average_Pointy</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Magma_Male_Average_Normal</defName>
+    <graphicPath>Things/PawnRace/MagmaRace/Head_Magma/Male_Average_Normal</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Magma_Male_Average_Pointy</defName>
+    <graphicPath>Things/PawnRace/MagmaRace/Head_Magma/Male_Average_Pointy</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+</Defs>

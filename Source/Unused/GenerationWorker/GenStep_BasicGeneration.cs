@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using RimWorld;
 using RimWorld.BaseGen;
@@ -7,11 +7,8 @@ using Verse;
 
 namespace GenerationWorker
 {
-	// Token: 0x02000021 RID: 33
 	public class GenStep_BasicGeneration : GenStep
 	{
-		// Token: 0x17000009 RID: 9
-		// (get) Token: 0x06000068 RID: 104 RVA: 0x00004522 File Offset: 0x00002722
 		public override int SeedPart
 		{
 			get
@@ -20,7 +17,6 @@ namespace GenerationWorker
 			}
 		}
 
-		// Token: 0x06000069 RID: 105 RVA: 0x0000452C File Offset: 0x0000272C
 		public override void Generate(Map map, GenStepParams parms)
 		{
 			CellRect cellRect;
@@ -71,7 +67,6 @@ namespace GenerationWorker
 			BaseGen.Generate();
 		}
 
-		// Token: 0x0600006A RID: 106 RVA: 0x000046CC File Offset: 0x000028CC
 		private CellRect FindRandomRectToDefend(Map map)
 		{
 			int rectRadius = Mathf.Max(Mathf.RoundToInt((float)Mathf.Min(map.Size.x, map.Size.z) * 0.07f), 1);
@@ -110,22 +105,16 @@ namespace GenerationWorker
 			return CellRect.CenteredOn(CellFinder.RandomCell(map), rectRadius).ClipInsideMap(map);
 		}
 
-		// Token: 0x04000034 RID: 52
 		public IntRange defaultTurretsCountRange = new IntRange(4, 5);
 
-		// Token: 0x04000035 RID: 53
 		public IntRange defaultMortarsCountRange = new IntRange(0, 1);
 
-		// Token: 0x04000036 RID: 54
 		public IntRange widthRange = new IntRange(3, 4);
 
-		// Token: 0x04000037 RID: 55
 		public IntRange guardsCountRange = new IntRange(0, 0);
 
-		// Token: 0x04000038 RID: 56
 		private const int Padding = 7;
 
-		// Token: 0x04000039 RID: 57
 		public const int DefaultGuardsCount = 0;
 	}
 }

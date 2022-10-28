@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using RimWorld;
 using RimWorld.BaseGen;
 using RimWorld.Planet;
@@ -6,11 +6,8 @@ using Verse;
 
 namespace GenerationWorker
 {
-	// Token: 0x02000022 RID: 34
 	public class GenStep_ItemGeneration : GenStep_Scatterer
 	{
-		// Token: 0x1700000A RID: 10
-		// (get) Token: 0x0600006C RID: 108 RVA: 0x000047E1 File Offset: 0x000029E1
 		public override int SeedPart
 		{
 			get
@@ -19,7 +16,6 @@ namespace GenerationWorker
 			}
 		}
 
-		// Token: 0x0600006D RID: 109 RVA: 0x000047E8 File Offset: 0x000029E8
 		protected override bool CanScatterAt(IntVec3 c, Map map)
 		{
 			if (!base.CanScatterAt(c, map))
@@ -46,7 +42,6 @@ namespace GenerationWorker
 			return true;
 		}
 
-		// Token: 0x0600006E RID: 110 RVA: 0x00004870 File Offset: 0x00002A70
 		protected override void ScatterAt(IntVec3 loc, Map map, GenStepParams parms, int count = 1)
 		{
 			CellRect cellRect = CellRect.CenteredOn(loc, 7, 7).ClipInsideMap(map);
@@ -68,10 +63,8 @@ namespace GenerationWorker
 			MapGenerator.SetVar<CellRect>("RectOfInterest", cellRect);
 		}
 
-        // Token: 0x0400003A RID: 58
         public ThingSetMakerDef thingSetMakerDef;
 
-		// Token: 0x0400003B RID: 59
 		private const int Size = 7;
 	}
 }

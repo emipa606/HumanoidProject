@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using RimWorld;
 using RimWorld.BaseGen;
 using Verse;
@@ -6,10 +6,8 @@ using Verse.AI.Group;
 
 namespace GenerationWorker
 {
-	// Token: 0x02000026 RID: 38
 	public class SymbolResolver_AdvancedGeneration : SymbolResolver
 	{
-		// Token: 0x0600007E RID: 126 RVA: 0x00004D24 File Offset: 0x00002F24
 		public override void Resolve(ResolveParams rp)
 		{
 			Map map = BaseGen.globalSettings.map;
@@ -82,7 +80,6 @@ namespace GenerationWorker
 			BaseGen.symbolStack.Push("floor", resolveParams7);
 		}
 
-		// Token: 0x0400003D RID: 61
 		public static readonly FloatRange DefaultPawnsPoints = new FloatRange(1150f, 1600f);
 	}
 }
